@@ -7,11 +7,11 @@ const poem = [
   [
     { es: "Me gustaría tener muchas vidas.", en: "I would like to have many lives." },
     {
-      es: "Muchas vidas distintas, ajenas la una a la otra",
+      es: "Muchas vidas distintas, ajenas la una a la otra.",
       en: "Many different lives, unrelated to one another"
     },
     {
-      es: "Muchas vidas para vivir con disgustos y alegrías",
+      es: "Muchas vidas para vivir con disgustos y alegrías.",
       en: "Many lives to live with sorrows and joys"
     },
     { es: "Muchas vidas para disfrutar y para sufrir.", en: "Many lives to enjoy and to suffer." }
@@ -19,7 +19,7 @@ const poem = [
   [
     { es: "Con muchas vidas, viviría más.", en: "With many lives, I would live more." },
     {
-      es: "Con muchas sorpresas y con muchas desilusiones",
+      es: "Con muchas sorpresas y con muchas desilusiones.",
       en: "With many surprises and many disappointments"
     },
     {
@@ -94,7 +94,7 @@ export default function Home() {
           ))}
         </div>
         <div className="identity">
-          <p className="name">Jesús C. Aguilar</p>
+          <p className="name">Jesús Cerrón Aguilar</p>
           <span className="divider">·</span>
           <p className="role">Writer, Student, and Tech Enthusiast</p>
         </div>
