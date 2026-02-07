@@ -18,7 +18,8 @@ export const sanityClient =
         projectId,
         dataset,
         apiVersion,
-        useCdn: process.env.NODE_ENV === "production",
+        // Avoid stale data in production
+        useCdn: false,
         token: process.env.NODE_ENV === "production" ? undefined : readToken,
         perspective:
           process.env.NODE_ENV === "production" || !readToken ? undefined : "drafts"
