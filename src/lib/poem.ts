@@ -2,6 +2,15 @@ import { fallbackPoem, PoemData, sanityClient } from "./sanity";
 
 const poemQuery = `*[_type == "poem"] | order(_updatedAt desc)[0]{
   title,
+  seoTitle,
+  seoDescription,
+  seoKeywords,
+  "seoImage": seoImage{
+    "asset": asset->{
+      _id,
+      url
+    }
+  },
   email,
   name,
   role,
@@ -16,6 +25,10 @@ export async function fetchPoem(): Promise<PoemData> {
     if (!data?.paragraphs?.length) return fallbackPoem;
     return {
       title: data.title,
+      seoTitle: data.seoTitle,
+      seoDescription: data.seoDescription,
+      seoKeywords: data.seoKeywords,
+      seoImage: data.seoImage,
       email: data.email,
       name: data.name,
       role: data.role,

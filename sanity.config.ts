@@ -27,6 +27,30 @@ export default defineConfig({
         type: "document",
         fields: [
           { name: "title", title: "Título", type: "string" },
+          {
+            name: "seoTitle",
+            title: "SEO Título",
+            type: "string",
+            description: "Título para buscadores (si se deja vacío, usa Título)."
+          },
+          {
+            name: "seoDescription",
+            title: "SEO Descripción",
+            type: "text",
+            rows: 3
+          },
+          {
+            name: "seoKeywords",
+            title: "SEO Keywords",
+            type: "array",
+            of: [{ type: "string" }]
+          },
+          {
+            name: "seoImage",
+            title: "SEO Imagen",
+            type: "image",
+            options: { hotspot: true }
+          },
           { name: "email", title: "Email", type: "string" },
           { name: "name", title: "Nombre", type: "string" },
           { name: "role", title: "Rol", type: "string" },

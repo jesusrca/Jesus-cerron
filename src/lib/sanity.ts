@@ -30,6 +30,15 @@ export type PoemLine = { es: string; en: string };
 export type PoemParagraph = { lines: PoemLine[] };
 export type PoemData = {
   title?: string;
+  seoTitle?: string;
+  seoDescription?: string;
+  seoKeywords?: string[];
+  seoImage?: {
+    asset?: {
+      _ref?: string;
+      url?: string;
+    };
+  };
   email?: string;
   name?: string;
   role?: string;
@@ -38,6 +47,9 @@ export type PoemData = {
 
 export const fallbackPoem: PoemData = {
   title: "Muchas vidas",
+  seoTitle: "Jesús Cerrón Aguilar",
+  seoDescription: "Escritor, estudiante y entusiasta de tecnología.",
+  seoKeywords: ["escritor", "poesía", "tecnología", "portafolio"],
   email: "j@jesuscerron.com",
   name: "Jesús Cerrón Aguilar",
   role: "Writer, Student, and Tech Enthusiast",

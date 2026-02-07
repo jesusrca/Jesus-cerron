@@ -1,0 +1,96 @@
+[
+  {
+    "fields": [
+      {
+        "name": "title",
+        "type": "string",
+        "title": "Título"
+      },
+      {
+        "description": "Título para buscadores (si se deja vacío, usa Título).",
+        "name": "seoTitle",
+        "type": "string",
+        "title": "SEO Título"
+      },
+      {
+        "rows": 3,
+        "name": "seoDescription",
+        "type": "text",
+        "title": "SEO Descripción"
+      },
+      {
+        "of": [
+          {
+            "type": "string"
+          }
+        ],
+        "name": "seoKeywords",
+        "type": "array",
+        "title": "SEO Keywords"
+      },
+      {
+        "options": {
+          "hotspot": true
+        },
+        "name": "seoImage",
+        "type": "image",
+        "title": "SEO Imagen"
+      },
+      {
+        "name": "email",
+        "type": "string"
+      },
+      {
+        "name": "name",
+        "type": "string",
+        "title": "Nombre"
+      },
+      {
+        "name": "role",
+        "type": "string",
+        "title": "Rol"
+      },
+      {
+        "of": [
+          {
+            "fields": [
+              {
+                "of": [
+                  {
+                    "fields": [
+                      {
+                        "name": "es",
+                        "type": "string",
+                        "title": "Español"
+                      },
+                      {
+                        "name": "en",
+                        "type": "string",
+                        "title": "Inglés"
+                      }
+                    ],
+                    "type": "object",
+                    "name": "line",
+                    "title": "Línea"
+                  }
+                ],
+                "name": "lines",
+                "type": "array",
+                "title": "Líneas"
+              }
+            ],
+            "type": "object",
+            "name": "paragraph",
+            "title": "Párrafo"
+          }
+        ],
+        "name": "paragraphs",
+        "type": "array",
+        "title": "Párrafos"
+      }
+    ],
+    "name": "poem",
+    "type": "document",
+    "title": "Poema"
+  }
+]
