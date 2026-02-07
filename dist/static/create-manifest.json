@@ -1,6 +1,6 @@
 {
-  "version": 2,
-  "createdAt": "2026-02-07T16:56:16.952Z",
+  "version": 3,
+  "createdAt": "2026-02-07T17:34:37.068Z",
   "workspaces": [
     {
       "name": "default",
@@ -8,12 +8,14 @@
       "basePath": "/",
       "projectId": "m0hy17y1",
       "dataset": "production",
-      "icon": "<style data-styled=\"true\" data-styled-version=\"6.3.8\">.bjRdh{font-family:Inter,-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",\"Liberation Sans\",Helvetica,Arial,system-ui,sans-serif;font-weight:500;font-size:13px;transform:translateY(1px);}/*!sc*/\ndata-styled.g106[id=\"sc-irLwvM\"]{content:\"bjRdh,\"}/*!sc*/\n</style><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 32 32\"><rect width=\"32\" height=\"32\" rx=\"2\" fill=\"#653a0b\"></rect><text x=\"50%\" y=\"50%\" text-anchor=\"middle\" alignment-baseline=\"middle\" fill=\"hsla(31, 80%, 62%, 1)\" class=\"sc-irLwvM bjRdh\">JC</text></svg>",
+      "icon": null,
       "mediaLibrary": {
-        "enabled": false
+        "enabled": false,
+        "__internal": {}
       },
       "schema": "1a75522e.create-schema.json",
-      "tools": "f8300d76.create-tools.json"
+      "tools": "d8640c31.create-tools.json"
     }
-  ]
+  ],
+  "studioVersion": "5.8.1"
 }
