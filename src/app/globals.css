@@ -108,17 +108,49 @@ body::before {
 }
 
 .line {
-  white-space: pre-wrap;
+  white-space: normal;
   opacity: 0;
   filter: blur(6px);
   transform: translateY(12px);
   transition: opacity 1s ease, filter 1s ease, transform 1s ease;
+  position: relative;
+  display: grid;
+  gap: 0.4rem;
 }
 
 .line.is-visible {
   opacity: 1;
   filter: blur(0);
   transform: translateY(0);
+}
+
+.line-item {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.tooltip {
+  position: absolute;
+  left: 0;
+  bottom: 100%;
+  transform: translateY(-8px);
+  background: rgba(34, 34, 34, 0.9);
+  color: #f7f1e7;
+  padding: 0.35rem 0.6rem;
+  border-radius: 0.4rem;
+  font-size: 0.9em;
+  opacity: 0;
+  pointer-events: none;
+  white-space: nowrap;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.line-item:hover .tooltip,
+.line-item.is-active .tooltip {
+  opacity: 1;
+  transform: translateY(-12px);
 }
 
 .links {

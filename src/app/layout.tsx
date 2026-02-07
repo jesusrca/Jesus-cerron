@@ -16,7 +16,10 @@ const serif = Cormorant_Garamond({
 
 export const metadata: Metadata = {
   title: "Jesús C. Aguilar",
-  description: "Writer, Student and Tech Man"
+  description: "Writer, Student and Tech Man",
+  icons: {
+    icon: "/favicon.svg"
+  }
 };
 
 export default function RootLayout({
