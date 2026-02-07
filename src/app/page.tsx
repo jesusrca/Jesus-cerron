@@ -16,6 +16,7 @@ export async function generateMetadata() {
     "portafolio"
   ];
   const ogImage = poem.seoImage?.asset?.url;
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
 
   return {
     title,
@@ -24,7 +25,12 @@ export async function generateMetadata() {
     openGraph: {
       title,
       description,
+      type: "website",
+      url: siteUrl,
       images: ogImage ? [{ url: ogImage }] : undefined
+    },
+    other: {
+      "fb:app_id": process.env.NEXT_PUBLIC_FB_APP_ID
     }
   };
 }
